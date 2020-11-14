@@ -18,4 +18,4 @@ client.on('message', message => {
   }
 });
 
-client.login(env.Token);
+client.login(process.env.Token);
