@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const list = client.guilds.get("472687107530555402");
+//const list = client.guilds.get("472687107530555402");
 
 client.once('ready', () => {
 	console.log('Ready!');
