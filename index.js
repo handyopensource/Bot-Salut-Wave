@@ -21,7 +21,7 @@ client.on('message', message => {
   if (message.content.includes('https://'||'http://'||'www.'||'.fr'||'.be'||'.com'||'.uk'||'.de' ||'.org')) {
     list.members.cache.forEach(member => {
      if (member.roles.cache.some(role => role.name === 'Administrateur' || 'Suppléant-Admin' || '**Moderateur**')) {
-        member.send(message.author.username + ' a envoyé ce message'  + message.content + 'sur le salon' + message.guild.name);
+        member.send(message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name);
      }
    });
   }
