@@ -17,7 +17,7 @@ client.on('message', message => {
     message.react('👋');
   }
   
-  const list = client.guilds.get("472687107530555402")
+  const list = client.guilds.cache.get("472687107530555402")
   if (message.content.includes('https://'||'http://'||'www.'||'.fr'||'.be'||'.com'||'.uk'||'.de' ||'.org')) {
     list.members.forEach(member => {
      if (member.roles.some(role => role.name === 'Administrateur' || 'Suppléant-Admin' || '**Moderateur**')) {
