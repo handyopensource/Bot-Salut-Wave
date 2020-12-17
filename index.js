@@ -18,7 +18,7 @@ client.on('message', message => {
   }
   
   const list = client.guilds.cache.get("472687107530555402");
-  if (message.guild.id === "472687107530555402" && message.content.includes('https://'||'http://'||'www.'||'.fr'||'.be'||'.com'||'.uk'||'.de' ||'.org')) {
+  if (message.author.id !== "777238000316055553" && message.content.includes('https://'||'http://'||'www.'||'.fr'||'.be'||'.com'||'.uk'||'.de' ||'.org')) {
     list.members.cache.forEach(member => {
      if (member.roles.cache.some(role => role.name === 'Administrateur' || 'Suppléant-Admin' || '**Moderateur**')) {
         member.send(message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name);
@@ -28,4 +28,3 @@ client.on('message', message => {
 });
 
 client.login(process.env.Token);
-https://www.dvkbuntu.org/
