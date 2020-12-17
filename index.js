@@ -18,6 +18,7 @@ client.on('message', message => {
     message.react('👋');
   }
   
+/**
   if (message.content.includes('https://'||'http://'||'www.'||'.fr'||'.be'||'.com'||'.uk'||'.de')) {
     list.members.forEach(member => {
      if (member.roles.some(role => role.name === 'Administrateur' || 'Suppléant-Admin' || '**Moderateur**')) {
@@ -25,6 +26,7 @@ client.on('message', message => {
      }
   });  
   }
+**/
 });
 
 client.login(process.env.Token);
