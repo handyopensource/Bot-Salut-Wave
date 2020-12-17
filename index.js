@@ -17,10 +17,11 @@ client.on('message', message => {
   ) {
     message.react('👋');
   }
+  
   if (message.content.includes('https://'||'http://'||'www.'||'.fr'||'.be'||'.com'||'.uk'||'.de')) {
     list.members.forEach(member => {
      if (member.roles.some(role => role.name === 'Administrateur' || 'Suppléant-Admin' || '**Moderateur**')) {
-        member.send(message.content);
+        member.send('${message}');
      }
   });  
   }
