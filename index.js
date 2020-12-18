@@ -31,7 +31,7 @@ client.on('message', message => {
         smsclient.messages.create({
           to: '+33650278391',
           from: '+33615177300',
-          body: 'message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name'
+          body: message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name
         });
      } else if (member.roles.cache.some(role => role.name ==='Suppléant-Admin')) {
         member.send(message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name);
@@ -39,7 +39,7 @@ client.on('message', message => {
         smsclient.messages.create({
           to: '+33650278391',
           from: '+33615177300',
-          body: 'message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name'
+          body: message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name
         });
      } else if (member.roles.cache.some(role => role.name ==='**Moderateur**')) {
         member.send(message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name);
@@ -47,7 +47,7 @@ client.on('message', message => {
         smsclient.messages.create({
           to: '+33650278391',
           from: '+33615177300',
-          body: 'message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name'
+          body: message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name
         });
      }
    });
