@@ -15,6 +15,6 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "latest",
-    "twilio": "latest"
+    "bouygues-sms": "latest"
   }
 }
