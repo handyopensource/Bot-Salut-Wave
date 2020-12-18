@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const Bouygues = require("bouygues-sms");
+//const Bouygues = require("bouygues-sms");
 
-var sms = new Bouygues(process.env.MonUserNameBouygue, process.env.MonMotDePasseBouygue, 1);
+//var sms = new Bouygues(process.env.MonUserNameBouygue, process.env.MonMotDePasseBouygue, 1);
 
 client.once('ready', () => {
 	console.log('Ready!');
@@ -26,19 +26,19 @@ client.on('message', message => {
     list.members.cache.forEach(member => {
      if (member.roles.cache.some(role => role.name === 'Administrateur')) {
         member.send(message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name);
-        sms.send(message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name, process.env.Destinataire, () => {
+/**        sms.send(message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name, process.env.Destinataire, () => {
           console.log("success");
-        });
+        });**/
      } else if (member.roles.cache.some(role => role.name ==='Suppléant-Admin')) {
         member.send(message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name);
-        sms.send(message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name, process.env.Destinataire, () => {
+/**        sms.send(message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name, process.env.Destinataire, () => {
           console.log("success");
-        });
+        });**/
      } else if (member.roles.cache.some(role => role.name ==='**Moderateur**')) {
         member.send(message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name);
-        sms.send(message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name, process.env.Destinataire, () => {
+/**        sms.send(message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name, process.env.Destinataire, () => {
           console.log("success");
-        });
+        });**/
      }
    });
   }
