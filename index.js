@@ -220,7 +220,7 @@ client.on('message', message => {
         messageToAdmin(message);
     }
     if (message.content.toLowerCase().startsWith("_nbdl")) {
-      answer = `nombre de téléchargement demandé`;
+      answer = `nombre de téléchargements demandés`;
       message.channel.send(answer);
       requestHOSDL(message);
     }
