@@ -2,11 +2,12 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const fs = require('fs');
 const fetch = require('node-fetch');
+const path = require('path');
 list_username = [];
 list_id = [];
 list_jour_message = [];
 list_heure_message = [];
-chemin_fichier = "../newUser.json";
+const chemin_fichier =  path.join(__dirname, '../newUser.json');
 
 /* ----------------------- Fonction Desmos---------------------------- */
 
