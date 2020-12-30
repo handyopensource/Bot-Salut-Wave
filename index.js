@@ -7,7 +7,7 @@ list_username = [];
 list_id = [];
 list_jour_message = [];
 list_heure_message = [];
-const chemin_fichier =  path.join(__dirname, '../newUser.json');
+chemin_fichier = "./newUser.json";
 
 /* ----------------------- Fonction Desmos---------------------------- */
 
@@ -15,13 +15,16 @@ function EnvoiMessageAdmin(messageToAdmin){
     const list = client.guilds.cache.get("472687107530555402");
     list.members.cache.forEach(member => {
         if (member.roles.cache.some(role => role.name === 'Administrateur')) {
+           if (member.user.cache.bot) return;
            member.send(messageToAdmin);
         } else if (member.roles.cache.some(role => role.name ==='Suppléant-Admin')) {
+           if (member.user.cache.bot) return;
            member.send(messageToAdmin);
         } else if (member.roles.cache.some(role => role.name ==='**Moderateur**')) {
+           if (member.user.cache.bot) return;
            member.send(messageToAdmin);
         }
-      });
+    });
 }
 
 function LireFichierJson(path){
@@ -187,8 +190,6 @@ client.once('ready', member => {
   }, 3600000);
 });
 
-
-
 client.on('guildMemberAdd', member => {
     LireFichierJson(chemin_fichier);
     let time = new Date();
@@ -216,9 +217,9 @@ client.on('message', message => {
     }
     const list = client.guilds.cache.get("789953828275224587");
 
-    if (message.author.id !== "789954986461233153" && (message.content.includes('https://') || message.content.includes('http://') || message.content.includes('www.') || message.content.includes('.fr') || message.content.includes('.be') || message.content.includes('.com') || message.content.includes('.uk') || message.content.includes('.de') || message.content.includes('.org'))) {
+    if (message.author.id !== "777238000316055553" && (message.content.includes('https://') || message.content.includes('http://') || message.content.includes('www.') || message.content.includes('.fr') || message.content.includes('.be') || message.content.includes('.com') || message.content.includes('.uk') || message.content.includes('.de') || message.content.includes('.org'))) {
         answer = message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name;
-        messageToAdmin(answer);
+        EnvoiMessageAdmin(answer);
     }
     if (message.content.toLowerCase().startsWith("_nbdl")) {
       answer = `nombre de téléchargements demandés`;
