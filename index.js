@@ -14,15 +14,17 @@ chemin_fichier = "./newUser.json";
 function EnvoiMessageAdmin(messageToAdmin){
     const list = client.guilds.cache.get("472687107530555402");
     list.members.cache.forEach(member => {
-        if (member.roles.cache.some(role => role.name === 'Administrateur')) {
-           if (member.user.cache.bot) return;
-           member.send(messageToAdmin);
-        } else if (member.roles.cache.some(role => role.name ==='Suppléant-Admin')) {
-           if (member.user.cache.bot) return;
-           member.send(messageToAdmin);
-        } else if (member.roles.cache.some(role => role.name ==='**Moderateur**')) {
-           if (member.user.cache.bot) return;
-           member.send(messageToAdmin);
+         if (member.id !== "777238000316055553") {
+           if (member.roles.cache.some(role => role.name === 'Administrateur')) {
+              //if (member.user.cache.bot) return;
+              member.send(messageToAdmin);
+           } else if (member.roles.cache.some(role => role.name ==='Suppléant-Admin')) {
+              //if (member.user.cache.bot) return;
+              member.send(messageToAdmin);
+           } else if (member.roles.cache.some(role => role.name ==='**Moderateur**')) {
+              //if (member.user.cache.bot) return;
+              member.send(messageToAdmin);
+           }
         }
     });
 }
@@ -177,7 +179,7 @@ client.once('ready', member => {
      verif_heure = verif_time.getHours();
      LireFichierJson(chemin_fichier);
      for (let index = 0; index < list_username.length; index++) {
-      if(list_jour_message[index] == verif_jour && list_heure_message[index] == verif_heure){
+      if(list_jour_message[index] == verif_jour && list_heure_message[index] <= verif_heure){
         message =list_username[index]+" est arrivé sur le serveur depuis 24h, merci de vérifier si il c'est présenter dans le channel 'présentation' et de statuer sur son rôle.";
         EnvoiMessageAdmin(message);
         list_username.splice(index, 1);
