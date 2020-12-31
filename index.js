@@ -178,9 +178,12 @@ client.once('ready', member => {
      verif_jour = verif_time.getDate();
      verif_heure = verif_time.getHours();
      LireFichierJson(chemin_fichier);
+     console.log('1-heure actuel : ', verif_heure);
      for (let index = 0; index < list_username.length; index++) {
-      if(list_jour_message[index] == verif_jour && list_heure_message[index] <= verif_heure){
-        message =list_username[index]+" est arrivé sur le serveur depuis 24h, merci de vérifier si il c'est présenter dans le channel 'présentation' et de statuer sur son rôle.";
+        console.log('2-heure arrivé : ', list_heure_message[index]);
+        console.log('2-heure actuel : ', verif_heure);
+        if(list_jour_message[index] == verif_jour && list_heure_message[index] <= verif_heure){
+        message ="**"+list_username[index]+"** est arrivé sur le serveur depuis au moins 24h, merci de vérifier si il s'est __présenter dans le channel **#🛡-présentation**__ et de **statuer** sur son rôle.";
         EnvoiMessageAdmin(message);
         list_username.splice(index, 1);
         list_id.splice(index, 1);
@@ -189,7 +192,8 @@ client.once('ready', member => {
         EcrireFichierJson(chemin_fichier, list_username, list_id, list_heure_message, list_jour_message);
       }
      }
-  }, 3600000);
+//  }, 3600000);
+  }, 60000);
 });
 
 client.on('guildMemberAdd', member => {
