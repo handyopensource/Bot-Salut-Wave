@@ -17,6 +17,7 @@
     "discord.js": "latest",
     "node-fetch": "latest",
     "fs": "latest",
-    "path": "latest"
+    "path": "latest",
+    "crypto": "latest"
   }
 }

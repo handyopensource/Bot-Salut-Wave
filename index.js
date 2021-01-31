@@ -3,6 +3,7 @@ const client = new Discord.Client();
 const fs = require('fs');
 const fetch = require('node-fetch');
 const path = require('path');
+const crypto = require('crypto');
 list_username = [];
 list_id = [];
 list_jour_message = [];
@@ -15,13 +16,10 @@ function EnvoiMessageAdmin(messageToAdmin){
     const list = client.guilds.cache.get("472687107530555402");
     list.members.cache.forEach(member => {
          if (member.id !== "777238000316055553") {
-           if (member.roles.cache.some(role => role.name === 'Administrateur')) {
+           if (member.roles.cache.some(role => role.name === 'Administrateurs')) {
               //if (member.user.cache.bot) return;
               member.send(messageToAdmin);
-           } else if (member.roles.cache.some(role => role.name ==='Suppléant-Admin')) {
-              //if (member.user.cache.bot) return;
-              member.send(messageToAdmin);
-           } else if (member.roles.cache.some(role => role.name ==='**Moderateur**')) {
+           } else if (member.roles.cache.some(role => role.name === 'Moderateur')) {
               //if (member.user.cache.bot) return;
               member.send(messageToAdmin);
            }
@@ -232,6 +230,11 @@ client.on('message', message => {
       message.channel.send(answer);
       requestHOSDL(message);
     }
+    if (message.content.toLowerCase().startsWith("!jitsi")) {
+      var crypto = require("crypto");
+      var r = crypto.randomBytes(20).toString('hex');
+      message.reply("https://meet.jit.si/" + r);
+    };
 });
 
 client.on('guildMemberRemove', member => {
