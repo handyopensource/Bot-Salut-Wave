@@ -221,7 +221,7 @@ client.on('message', message => {
     }
     const list = client.guilds.cache.get("789953828275224587");
 
-    if (message.author.id !== "777238000316055553" && (message.content.includes('https://') || message.content.includes('http://') || message.content.includes('www.') || message.content.includes('.fr') || message.content.includes('.be') || message.content.includes('.com') || message.content.includes('.uk') || message.content.includes('.de') || message.content.includes('.org'))) {
+    if (message.author.id !== "777238000316055553" && (message.content.includes('@Administrateurs') || message.content.includes('https://') || message.content.includes('http://') || message.content.includes('www.') || message.content.includes('.fr') || message.content.includes('.be') || message.content.includes('.com') || message.content.includes('.uk') || message.content.includes('.de') || message.content.includes('.org'))) {
         answer = message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name;
         EnvoiMessageAdmin(answer);
     }
