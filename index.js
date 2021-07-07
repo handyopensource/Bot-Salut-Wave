@@ -167,6 +167,22 @@ function requestHOSDL(message) {
     });
 }
 
+/* ----------------------------------- Fonction Mention ------------------------------------------ */
+
+function getUserFromMention(mention) {
+        if (!mention) return;
+
+        if (mention.startsWith('<@') && mention.endsWith('>')) {
+                mention = mention.slice(2, -1);
+
+                if (mention.startsWith('!')) {
+                        mention = mention.slice(1);
+                }
+
+                return client.users.cache.get(mention);
+        }
+}
+
 /* ----------------------------------- Fonction Discord ------------------------------------------ */
 
 client.once('ready', member => {
@@ -221,9 +237,16 @@ client.on('message', message => {
     }
     const list = client.guilds.cache.get("789953828275224587");
 
-    if (message.author.id !== "777238000316055553" && (message.content.includes('@Administrateurs') || message.content.includes('https://') || message.content.includes('http://') || message.content.includes('www.') || message.content.includes('.fr') || message.content.includes('.be') || message.content.includes('.com') || message.content.includes('.uk') || message.content.includes('.de') || message.content.includes('.org'))) {
+    if (message.author.id !== "777238000316055553" && (message.content.includes('https://') || message.content.includes('http://') || message.content.includes('www.') || message.content.includes('.fr') || message.content.includes('.be') || message.content.includes('.com') || message.content.includes('.uk') || message.content.includes('.de') || message.content.includes('.org'))) {
         answer = message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name;
         EnvoiMessageAdmin(answer);
+    }
+    let mention = message.mentions.roles.first();
+    if (mention) {
+        if (message.author.id !== "777238000316055553" && mention.id == "513252820967882764") {
+            answer = message.author.username + ' a envoyé ce message ***'  + message.content + '*** sur le salon ' + message.channel.name;
+            EnvoiMessageAdmin(answer);
+        }
     }
     if (message.content.toLowerCase().startsWith("_nbdl")) {
       answer = `nombre de téléchargements demandés`;
