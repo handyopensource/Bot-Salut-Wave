@@ -248,6 +248,14 @@ client.on('message', message => {
             EnvoiMessageAdmin(answer);
         }
     }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!yes/no")) {
+        const reactionEmojiOUI = message.guild.emojis.cache.find(emoji => emoji.name === 'OUI4');
+	const reactionEmojiNON = message.guild.emojis.cache.find(emoji => emoji.name === 'NON4');
+	const reactionEmojiABS = message.guild.emojis.cache.find(emoji => emoji.name === 'ABS3');
+	message.react(reactionEmojiOUI);
+	message.react(reactionEmojiNON);
+	message.react(reactionEmojiABS);
+    }
     if (message.content.toLowerCase().startsWith("_nbdl")) {
       answer = `nombre de téléchargements demandés`;
       message.channel.send(answer);
