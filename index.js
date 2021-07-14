@@ -256,6 +256,163 @@ client.on('message', message => {
 	message.react(reactionEmojiNON);
 	message.react(reactionEmojiABS);
     }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-all")) {
+        message.react('0️⃣');
+	message.react('1️⃣');
+	message.react('2️⃣');
+	message.react('3️⃣');
+	message.react('4️⃣');
+	message.react('5️⃣');
+	message.react('6️⃣');
+	message.react('7️⃣');
+	message.react('8️⃣');
+	message.react('9️⃣');
+	message.react('🔟');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-9")) {
+        message.react('0️⃣');
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+        message.react('4️⃣');
+        message.react('5️⃣');
+        message.react('6️⃣');
+        message.react('7️⃣');
+        message.react('8️⃣');
+        message.react('9️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-8")) {
+        message.react('0️⃣');
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+        message.react('4️⃣');
+        message.react('5️⃣');
+        message.react('6️⃣');
+        message.react('7️⃣');
+        message.react('8️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-7")) {
+        message.react('0️⃣');
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+        message.react('4️⃣');
+        message.react('5️⃣');
+        message.react('6️⃣');
+        message.react('7️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-6")) {
+        message.react('0️⃣');
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+        message.react('4️⃣');
+        message.react('5️⃣');
+        message.react('6️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-5")) {
+        message.react('0️⃣');
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+        message.react('4️⃣');
+        message.react('5️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-4")) {
+        message.react('0️⃣');
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+        message.react('4️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-3")) {
+        message.react('0️⃣');
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-2")) {
+        message.react('0️⃣');
+        message.react('1️⃣');
+        message.react('2️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-1")) {
+        message.react('0️⃣');
+        message.react('1️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-all")) {
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+        message.react('4️⃣');
+        message.react('5️⃣');
+        message.react('6️⃣');
+        message.react('7️⃣');
+        message.react('8️⃣');
+        message.react('9️⃣');
+        message.react('🔟');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-9")) {
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+        message.react('4️⃣');
+        message.react('5️⃣');
+        message.react('6️⃣');
+        message.react('7️⃣');
+        message.react('8️⃣');
+        message.react('9️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-8")) {
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+        message.react('4️⃣');
+        message.react('5️⃣');
+        message.react('6️⃣');
+        message.react('7️⃣');
+        message.react('8️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-7")) {
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+        message.react('4️⃣');
+        message.react('5️⃣');
+        message.react('6️⃣');
+        message.react('7️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-6")) {
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+        message.react('4️⃣');
+        message.react('5️⃣');
+        message.react('6️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-5")) {
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+        message.react('4️⃣');
+        message.react('5️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-4")) {
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+        message.react('4️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-3")) {
+        message.react('1️⃣');
+        message.react('2️⃣');
+        message.react('3️⃣');
+    }
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-2")) {
+        message.react('1️⃣');
+        message.react('2️⃣');
+    }
     if (message.content.toLowerCase().startsWith("_nbdl")) {
       answer = `nombre de téléchargements demandés`;
       message.channel.send(answer);
