@@ -6,7 +6,7 @@ Fonctionalités du bot :
 
 __I - FONCTIONNALITÉS COOL :__  
 ------------------------------
-   1 - Toute personne qui commence son message par hello, bonjour, bonsoir, couccou, hey et salut aura la réaction : 👋 à son message.  
+   1 - Toute personne qui commence son message par hello, bonjour, bonsoir, coucou, hey et salut aura la réaction : 👋 à son message.  
    2 - La commande "**_nbdl**" permet d'afficher le nombre total de téléchargements de DVKBuntu et de l'Easy-Menu.  
    3 - La commande "**!jitsi**" envoit en réponse un message contenant un lien unique vers la plateforme jitsi.
 
