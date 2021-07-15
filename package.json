@@ -18,6 +18,7 @@
     "node-fetch": "latest",
     "fs": "latest",
     "path": "latest",
-    "crypto": "latest"
+    "crypto": "latest",
+    "ws": "latest"
   }
 }
