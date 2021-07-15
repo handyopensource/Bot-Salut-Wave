@@ -256,7 +256,7 @@ client.on('message', message => {
 	message.react(reactionEmojiNON);
 	message.react(reactionEmojiABS);
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-all")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!00-10")) {
         message.react('0️⃣');
 	message.react('1️⃣');
 	message.react('2️⃣');
@@ -269,7 +269,7 @@ client.on('message', message => {
 	message.react('9️⃣');
 	message.react('🔟');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-9")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!00-09")) {
         message.react('0️⃣');
         message.react('1️⃣');
         message.react('2️⃣');
@@ -281,7 +281,7 @@ client.on('message', message => {
         message.react('8️⃣');
         message.react('9️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-8")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!00-08")) {
         message.react('0️⃣');
         message.react('1️⃣');
         message.react('2️⃣');
@@ -292,7 +292,7 @@ client.on('message', message => {
         message.react('7️⃣');
         message.react('8️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-7")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!00-07")) {
         message.react('0️⃣');
         message.react('1️⃣');
         message.react('2️⃣');
@@ -302,7 +302,7 @@ client.on('message', message => {
         message.react('6️⃣');
         message.react('7️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-6")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!00-06")) {
         message.react('0️⃣');
         message.react('1️⃣');
         message.react('2️⃣');
@@ -311,7 +311,7 @@ client.on('message', message => {
         message.react('5️⃣');
         message.react('6️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-5")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!00-05")) {
         message.react('0️⃣');
         message.react('1️⃣');
         message.react('2️⃣');
@@ -319,29 +319,29 @@ client.on('message', message => {
         message.react('4️⃣');
         message.react('5️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-4")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!00-04")) {
         message.react('0️⃣');
         message.react('1️⃣');
         message.react('2️⃣');
         message.react('3️⃣');
         message.react('4️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-3")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!00-03")) {
         message.react('0️⃣');
         message.react('1️⃣');
         message.react('2️⃣');
         message.react('3️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-2")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!00-02")) {
         message.react('0️⃣');
         message.react('1️⃣');
         message.react('2️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!0-1")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!00-01")) {
         message.react('0️⃣');
         message.react('1️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-all")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!01-10")) {
         message.react('1️⃣');
         message.react('2️⃣');
         message.react('3️⃣');
@@ -353,7 +353,7 @@ client.on('message', message => {
         message.react('9️⃣');
         message.react('🔟');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-9")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!01-09")) {
         message.react('1️⃣');
         message.react('2️⃣');
         message.react('3️⃣');
@@ -364,7 +364,7 @@ client.on('message', message => {
         message.react('8️⃣');
         message.react('9️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-8")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!01-08")) {
         message.react('1️⃣');
         message.react('2️⃣');
         message.react('3️⃣');
@@ -374,7 +374,7 @@ client.on('message', message => {
         message.react('7️⃣');
         message.react('8️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-7")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!01-07")) {
         message.react('1️⃣');
         message.react('2️⃣');
         message.react('3️⃣');
@@ -383,7 +383,7 @@ client.on('message', message => {
         message.react('6️⃣');
         message.react('7️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-6")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!01-06")) {
         message.react('1️⃣');
         message.react('2️⃣');
         message.react('3️⃣');
@@ -391,25 +391,25 @@ client.on('message', message => {
         message.react('5️⃣');
         message.react('6️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-5")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!01-05")) {
         message.react('1️⃣');
         message.react('2️⃣');
         message.react('3️⃣');
         message.react('4️⃣');
         message.react('5️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-4")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!01-04")) {
         message.react('1️⃣');
         message.react('2️⃣');
         message.react('3️⃣');
         message.react('4️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-3")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!01-03")) {
         message.react('1️⃣');
         message.react('2️⃣');
         message.react('3️⃣');
     }
-    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!1-2")) {
+    if (message.author.id !== "777238000316055553" && message.content.toLowerCase().startsWith("!01-02")) {
         message.react('1️⃣');
         message.react('2️⃣');
     }
