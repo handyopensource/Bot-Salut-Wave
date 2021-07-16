@@ -7,7 +7,7 @@ Fonctionalités du bot :
 __I - FONCTIONNALITÉS COOL :__  
 ------------------------------
    1 - Toute personne qui commence son message par hello, bonjour, bonsoir, coucou, hey et salut aura la réaction : 👋 à son message.  
-   2 - La commande "**_nbdl**" permet d'afficher le nombre total de téléchargements de DVKBuntu et de l'Easy-Menu.  
+   2 - La commande "**!nbdl**" permet d'afficher le nombre total de téléchargements de DVKBuntu et de l'Easy-Menu.  
    3 - La commande "**!jitsi**" envoit en réponse un message contenant un lien unique vers la plateforme jitsi.
 
     
@@ -22,27 +22,11 @@ __II - ADMINISTRATION DU SERVEUR :__
 __III - PRISE DE DÉCISIONS :__  
 ------------------------------
    1 - Les commandes suivantes en début de message permettent les votes :  
-  
-    !yes/no : ajoute 3 réactions : OUI, NON et ABSTENTION.  
-  
-    !00-10 : ajoute des numéros de 0 à 10 en réaction pour QCM.  
-    !00-09 : ajoute des numéros de 0 à 9 en réaction pour QCM.  
-    !00-08 : ajoute des numéros de 0 à 8 en réaction pour QCM.  
-    !00-07 : ajoute des numéros de 0 à 7 en réaction pour QCM.  
-    !00-06 : ajoute des numéros de 0 à 6 en réaction pour QCM.  
-    !00-05 : ajoute des numéros de 0 à 5 en réaction pour QCM.  
-    !00-04 : ajoute des numéros de 0 à 4 en réaction pour QCM.  
-    !00-03 : ajoute des numéros de 0 à 3 en réaction pour QCM.  
-    !00-02 : ajoute des numéros de 0 à 2 en réaction pour QCM.  
-    !00-01 : ajoute des numéros de 0 à 1 en réaction pour QCM.  
-  
-    !01-10 : ajoute des numéros de 1 à 10 en réaction pour QCM.  
-    !01-09 : ajoute des numéros de 1 à 9 en réaction pour QCM.  
-    !01-08 : ajoute des numéros de 1 à 8 en réaction pour QCM.  
-    !01-07 : ajoute des numéros de 1 à 7 en réaction pour QCM.  
-    !01-06 : ajoute des numéros de 1 à 6 en réaction pour QCM.  
-    !01-05 : ajoute des numéros de 1 à 5 en réaction pour QCM.  
-    !01-04 : ajoute des numéros de 1 à 4 en réaction pour QCM.  
-    !01-03 : ajoute des numéros de 1 à 3 en réaction pour QCM.  
-    !01-02 : ajoute des numéros de 1 à 2 en réaction pour QCM.   
 
+    !yes/no : ajoute 3 réactions : OUI, NON et ABSTENTION.
+
+    !n1-n2 : ajoute des numéros de n1 à n2 en réaction pour QCM où n1 et n2 sont des nombres à deux chiffres et n1 ≥ 0, n2 ≤ 10 et n1 ≥ n2.
+    Par exemple :
+      !00-09 : ajoute des numéros de 0 à 9 en réaction.
+      !01-10 : ajoute des numéros de 1 à 10 en réaction.
+      !04-08 : ajoute des numéros de 1 à 08 en réaction.
