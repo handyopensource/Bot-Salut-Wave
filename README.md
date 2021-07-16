@@ -29,4 +29,4 @@ __III - PRISE DE DÉCISIONS :__
     Par exemple :
       !00-09 : ajoute des numéros de 0 à 9 en réaction.
       !01-10 : ajoute des numéros de 1 à 10 en réaction.
-      !04-08 : ajoute des numéros de 1 à 08 en réaction.
+      !04-08 : ajoute des numéros de 4 à 8 en réaction.

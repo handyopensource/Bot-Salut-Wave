@@ -253,7 +253,7 @@ client.on('message', message => {
     if (!message.content.startsWith(prefix)) return; // don't accept message which does not start with the prefix
     /* ----------------------------------- Commandes ---------------------------------- */
     let command = message.content.slice(prefix.length, message.length).toLowerCase();
-    if (command.startsWith("!yes/no")) {
+    if (command.startsWith("yes/no")) {
         const reactionEmojiOUI = message.guild.emojis.cache.find(emoji => emoji.name === 'OUI4');
         const reactionEmojiNON = message.guild.emojis.cache.find(emoji => emoji.name === 'NON4');
         const reactionEmojiABS = message.guild.emojis.cache.find(emoji => emoji.name === 'ABS3');
