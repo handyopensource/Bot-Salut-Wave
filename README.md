@@ -25,7 +25,7 @@ __III - PRISE DE DÉCISIONS :__
 
     !yes/no : ajoute 3 réactions : OUI, NON et ABSTENTION.
 
-    !n1-n2 : ajoute des numéros de n1 à n2 en réaction pour QCM où n1 et n2 sont des nombres à deux chiffres et n1 ≥ 0, n2 ≤ 10 et n1 ≥ n2.
+    !n1-n2 : ajoute des numéros de n1 à n2 en réaction pour QCM où n1 et n2 sont des nombres à deux chiffres et n1 ≥ 0, n2 ≤ 10 et n1 ≤ n2.
     Par exemple :
       !00-09 : ajoute des numéros de 0 à 9 en réaction.
       !01-10 : ajoute des numéros de 1 à 10 en réaction.
